@@ -41,8 +41,6 @@ Use only case of image conversion
    exception
    when others then
    DBMS_LOB.freetemporary (v_clob);
---   XX_HR_MINA.PRINT_LOG('to_base64');
- --  XX_HR_MINA.PRINT_LOG(sqlerrm);
    return null;
 END;
 /
